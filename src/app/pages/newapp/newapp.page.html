@@ -1,0 +1,46 @@
+<ion-header>
+  <br>
+  <p class="lead">If you would love to havd a medical session with our hospital, please create a new ticket by filling the form below.</p>
+  <ion-toolbar>
+    <ion-title>Book An Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="title">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="user"
+            required
+            [(ngModel)]="appointment.user"
+            name="user"
+          />
+        </div>
+        <br> 
+        <div class="form-group">
+          <label for="description">Appointment Description</label>
+          <input
+            class="form-control"
+            id="description"
+            required
+            [(ngModel)]="appointment.description"
+            name="description"
+          />
+        </div>
+        
+        <br>
+        <button (click)="saveAppointment()" class="btn btn-success">Submit Appointment</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>Appointment was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newAppointment()">Add Appointment</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

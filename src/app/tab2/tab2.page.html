@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <h5 style="text-transform: uppercase;text-align: center; color:#ff73bb;">Covid-Bot AI-Agent</h5>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src="assets/covid.jpg"></ion-img>
+  <ion-card>
+    <ion-card-header text-wrap>
+      <ion-button color='success' ion-button (click)="openWithCordovaBrowser('https://wa.me/14155238886?text=join%20kept-brush')">Get Statistical data</ion-button> 
+      <br>
+      <!-- https://wa.me/?text=urlencodedtext -->
+      <strong>Chat with the AI Agent</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <p>If you want to know about covid19 numbers, you can ask my Agent in the following ways:</p> 
+      <p>* Kenya Covid Stats</p>
+      <p>* Deaths today</p>
+      <p>* Recoveries today</p>
+      <p>* Infections today</p>
+      <p>* Covid Symptoms</p>
+      <p>* Covid Prevention</p>
+      <br>
+      <p>
+        <strong>© 2020 ICS</strong>
+      </p>
+      <ion-button color='primary' ion-button (click)="openWithCordovaBrowser('https://1a44f1393429.ngrok.io')">Chat With Covid-AI-Agent</ion-button>
+      <br><br>
+      <ion-button color='primary' routerLink="/newapp" routerDirection="root" >Book an Appointment</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<!-- hey -->
+
+<!-- statistical data link fail -->
+
+<!-- ngrok http 8000  -->
